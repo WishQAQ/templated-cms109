@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+<meta name="generator" content="EditPlus">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="360-site-verification" content="8888c18462fbab9a99ff8e51e2bc0adf" />
+<link rel="stylesheet" type="text/css" href="/skin/css/style.css">
+<link rel="stylesheet" type="text/css" href="/skin/css/qq.css">
+<script src="/skin/js/jquery.min.js"></script>
+<script src="/skin/js/gr.js"></script>
+<script src="/skin/js/jquery.qrcode.min.js"></script>
+<script src="/skin/js/qrcode.js"></script>
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+</head>
+<body>
+<div class="all"> {dede:include filename="head.htm"/}
+  <div class="banner1"><img src="/skin/images/539aa3732903b.jpg" /></div>
+  <script type="text/javascript" src="/skin/js/jquery.validate.js"></script>
+  <style type="text/css">
+.leaveout{width:688px;padding-top:10px; padding-left:30px;overflow:hidden;}
+.leaveout_1{line-height:30px;color: #424445;font-weight: bold;}
+.left_L{text-align:center; color:#666;}
+.t_r {color:#666;}
+.c_r a,.tl a{color:#666;text-decoration:none;}
+.tc_r{width:450px;height:110px;border:1px solid #d0d0d0;}
+.tj {width: 60px;height:25px;color: #fff;border: none;cursor: pointer;background: #43aefc; margin-right:12px;}
+.cz {width: 60px;height:25px;color: #fff;border: none;cursor: pointer;background: #1698f6;}
+.input-text{border:1px solid #ccc;height:20px;width:80px;background: #fff;line-height:20px;}
+.t_r input{border:1px solid #ccc;height:20px;line-height:20px;}
+table#leavetable tr {height:25px;line-height:25px;}
+table#leavetable td {padding: 3px 2px 3px 3px;}
+
+
+</style>
+  <div class="ab_main"><script type="text/javascript" src="/skin/js/marquee.js"></script><script type="text/javascript">$(function(){
+	
+	
+	
+    $('#marquee11').kxbdSuperMarquee({
+		distance:200,
+		time:3,
+		btnGo:{up:'#goU',down:'#goD'},
+		direction:'down'
+	});
+	   
+	
+
+});
+
+</script>
+    <style type="text/css">
+#marquee11{width:237px;height:400px;overflow:hidden; padding-top:20px;}
+#marquee11 ul li{ height:200px;width:202px; margin:0 auto;}
+</style>
+    <div class="ab_left">
+      <div class="ab_left1">
+        <h2>{dede:field name='typeid' function="GetTopTypename(@me)"/}<font>Contact</font></h2>
+        <ul>
+          {dede:channel type='son' currentstyle="
+          <li><a href='~typelink~' class='cur_left'><font>></font>~typename~</a></li>
+          "}
+          <li><a  href="[field:typeurl/]"><font>></font>[field:typename/]</a></li>
+          {/dede:channel}
+        </ul>
+      </div>
+      <div class="ab_left2">
+        <h2>推荐产品<font>Recommended</font></h2>
+        <div class="ab_left2_ul">
+          <div id="marquee11">
+            <ul>
+              {dede:arclist row=12 titlelen=32 typeid='6'}
+              <li><a href="[field:arcurl/]"  title="[field:title/]"><img src="[field:picname/]" /><span>[field:title/]</span></a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ab_right">
+      <h2><span>当前位置：{dede:field name='position'/}</span><strong>{dede:field name='typename'/}</strong></h2>
+      <div class="ab_txt">
+        <div class="leaveout">
+          <div class="leaveout_1">注：带"*"的内容请您必须填写，您所填写的个人信息我们会严格遵守保密原则</div>
+          <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+            <input type="hidden" name="action" value="post">
+            <input type="hidden" name="diyid" value="1">
+            <input type="hidden" name="do" value="2">
+            <table id="leavetable" border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td width="77" height="40" class="left_L">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
+                  <td width="210" class="t_r"><input name="name" class="kuangt" id="name" type="text" validate="minlength:1, maxlength:10, required:true" maxlength="20">
+                    <font color="red">*</font></td>
+                  <td width="75" class="t_r"><span class="left_L">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</span></td>
+                  <td width="298" class="t_r"><input name="xb" type="radio" class="input_radio " id="xb" value="男" checked="checked">
+                    &nbsp;男&nbsp;&nbsp;&nbsp;
+                    <input id="xb" class="input_radio " type="radio" value="女" name="xb">
+                    &nbsp;女 </td>
+                </tr>
+                <tr>
+                  <td height="40" class="left_L">电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：</td>
+                  <td class="t_r"><input name="tel" type="text" maxlength="100" id="tel" class="kuangt" validate="required:true">
+                    <font color="red">*</font></td>
+                  <td class="t_r"><span class="left_L">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</span></td>
+                  <td class="t_r"><input name="email" class="kuangt" type="text" maxlength="20" id="email"></td>
+                </tr>
+                <tr>
+                  <td height="40" class="left_L">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</td>
+                  <td colspan="3" class="t_r"><input name="dz" type="text" maxlength="100" id="dz" class="kuangt2"></td>
+                </tr>
+                <tr>
+                  <td class="left_L">留言內容：</td>
+                  <td colspan="3" class="c_r"><textarea name="nr" rows="10" cols="50" id="nr" validate=" required:true" class="tc_r"></textarea>
+                    <font color="red">*</font></td>
+                </tr>
+                <tr>
+                  <td height="40" class="tl">&nbsp;</td>
+                  <td colspan="3" class="tl"><input type="submit" name="submit" value="提 交" id="submit" class="tj">
+                    <input type="reset" value="重 置" class="cz"></td>
+                </tr>
+              </tbody>
+            </table>
+            <input type="hidden" name="dede_fields" value="name,text;tel,text;dz,text;email,text;nr,text;xb,radio">
+            <input type="hidden" name="dede_fieldshash" value="41ff76aa4d0030efe76f5ff5efb26e04">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  {dede:include filename="footer.htm"/} </div>
+</body>
+</html>

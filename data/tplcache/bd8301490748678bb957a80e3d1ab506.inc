@@ -1,0 +1,1 @@
+<li><a href='[field:picname/]' class='fresco' data-fresco-group='example' data-fresco-caption="[field:title/]" title="[field:title/]"><img src="[field:picname/]"/><span>[field:title/]</span></a></li>

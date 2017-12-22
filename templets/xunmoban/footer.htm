@@ -1,0 +1,78 @@
+
+<div class="btm">
+<div class="btm1">
+<div class="btm_left">
+<ul>
+<li><a href="/">返回首页</a></li>
+<li>|</li>
+{dede:channel type='top' row='6' currentstyle="
+<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>
+"}
+<li><a href="[field:typeurl/]">[field:typename/]</a></li>
+<li>|</li>
+{/dede:channel}
+{dede:type typeid='32'}
+<li><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:type}
+</ul>
+<p>{dede:global.cfg_lx/}
+{dede:global.cfg_powerby/} ICP:<a href="http://www.miibeian.gov.cn">{dede:global.cfg_beian/}</a><br />
+技术支持：<a href="http://www.xunmoban.com" target="_blank">寻模板网络</a> </p>
+<ul style="border-top:1px solid #fff; margin-top:10px;">
+<li>友情链接：</li>
+{dede:flink titlelen='20' row='20' type='text'}
+<li> [field:link /] </li>
+<li>|</li>
+{/dede:flink}
+<li><a href="http://www.xunmoban.com" target="_blank">技术支持</a></li>
+</ul>
+</div>
+<div class="btm_right">
+<ul>
+<li>
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qqa/}&amp;site=qq&amp;menu=yes"><img width="124" height="40" alt="" src="/skin/images/qq_r2_c2_s1.png"></a>
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qqb/}&amp;site=qq&amp;menu=yes"><img width="124" height="40" alt="" src="/skin/images/qq_r2_c4_s1.png"></a>
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qqc/}&amp;site=qq&amp;menu=yes"><img width="124" height="40" alt="" src="/skin/images/qq_r2_c6_s1.png"></a>
+</li>
+</ul>
+<h3><img src="/skin/images/wxcode.jpg" /></h3>
+</div>
+</div>
+</div>
+<!-- Baidu Button BEGIN --><script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=6&amp;pos=left&amp;uid=0" ></script> 
+<script type="text/javascript" id="bdshell_js"></script> 
+<script type="text/javascript">var bds_config={"bdTop":189};
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script><!-- Baidu Button END -->
+<div class="kefu" id="kefu">
+<div class="kefu-l pngimg"></div>
+<div class="kefu-r">
+<div class="kftop">
+<div id="guanbi"></div>
+</div>
+<div class="kfbox">
+<ul>
+<li class="qq"><a target="_blank" href="tencent://message/?uin={dede:global.cfg_qqa/}" rel="nofollow">销售客服1</a></li>
+<li class="qq"><a target="_blank" href="tencent://message/?uin={dede:global.cfg_qqb/}" rel="nofollow">销售客服2</a></li>
+<li class="qq"><a target="_blank" href="tencent://message/?uin={dede:global.cfg_qqc/}" rel="nofollow">销售客服3</a></li>
+<li class="bs"></li>
+<li class="codeer"><span>网站<br>
+二维码</span><img src="/skin/images/erwm.jpg"  width="75" height="75"/></li>
+</ul>
+</div>
+<div class="kfbottom"></div>
+</div>
+</div>
+<script> var kefu = new Floaters(); kefu.addItem("kefu",-1,180,"");kefu.play("kefu");</script><script>$('#guanbi').click(function(){
+$('#kefu .kefu-l').animate({width:'30px'},500);
+$('#kefu .kefu-r').animate({width:0},100);
+});
+
+$(function(){
+$('.kefu-l').click(function(){
+$(this).animate({width:0},100);
+$('.kefu-r').animate({width:'157px'},100);
+})
+});
+
+</script>

@@ -1,0 +1,37 @@
+<script>
+var userAgentInfo = navigator.userAgent;  
+var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+var flag = false;
+var v=0
+for ( v = 0; v < Agents.length; v++) 
+{  
+if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = true; break; }  
+}  
+if(flag){
+window.location='{dede:global.cfg_basehost/}/wap.php';  //如果是移动设备访问，就跳转到手机版。
+}
+</script>
+<div class="top">
+  <div class="top1">
+    <h1><a href="/" title="{dede:global.cfg_webname/}"><img src="/skin/images/logo.png" id="pngImg" /></a></h1>
+    <h2><a href="/"><img src="/skin/images/cxt.jpg" /></a></h2>
+    <span><img src="/skin/images/400.png" id="pngImg" /></span></div>
+  <div class="top_dh">
+    <ul>
+      <li><a href="/">首页</a></li>
+      {dede:channel type='top' row='7' currentstyle="
+      <li class='hover'><a href='~typelink~' class='abcd'><span>~typename~</span></a></li>
+      "}
+      <li><a href="[field:typeurl/]" class="">[field:typename/]</a></li>
+      {/dede:channel}
+    </ul>
+    <div class="form1">
+      <form method="post" action="/plus/search.php" name="myform" id="form" >
+        <input type="hidden" id=""  name="m" value="Search"/>
+        <input type="hidden" value="cn" name="l">
+        <input name="keyword" class="seek_left"  id="text" type="text" value="请输入搜索关键词" onfocus="this.value=''" onblur="if(this.value == '')this.value='请输入搜索关键词'"/>
+        <input class="seek_right" type="submit" value="搜 索" id="submit_h"/>
+      </form>
+    </div>
+  </div>
+</div>

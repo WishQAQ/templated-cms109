@@ -1,0 +1,1 @@
+ <a href="[field:imgsrc/]" title="[field:text/]" rel='gal1' id="zoom_box"><img src="[field:imgsrc/]" width="400" height="400" class="big_small" title="[field:text/]"/></a> 

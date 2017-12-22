@@ -1,0 +1,43 @@
+<?php
+$z[0]=Array("field","",346,365);
+$z[0][4]['name']="title";
+$z[1]=Array("global","",366,392);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("field","",433,455);
+$z[2][4]['name']="keywords";
+$z[3]=Array("field","",495,546);
+$z[3][4]['name']="description";
+$z[3][4]['function']="html2text(@me)";
+$z[4]=Array("include","",1043,1078);
+$z[4][4]['filename']="head.htm";
+$z[5]=Array("field","",1859,1917);
+$z[5][4]['name']="typeid";
+$z[5][4]['function']="GetTopTypename(@me)";
+$z[6]=Array("channel","\r\n          <li><a  href=\"[field:typeurl/]\"><font>></font>[field:typename/]</a></li>\r\n          ",1975,2226);
+$z[6][4]['type']="son";
+$z[6][4]['currentstyle']="<li><a href='~typelink~' class='cur_left'><font>></font>~typename~</a></li>";
+$z[7]=Array("arclist","\r\n              <li><a href=\"[field:arcurl/]\"  title=\"[field:title/]\"><img src=\"[field:picname/]\" /><span>[field:title/]</span></a></li>\r\n              ",2441,2652);
+$z[7][4]['row']="12";
+$z[7][4]['titlelen']="32";
+$z[7][4]['typeid']="6";
+$z[8]=Array("field","",2792,2821);
+$z[8][4]['name']="position";
+$z[9]=Array("field","",2836,2865);
+$z[9][4]['name']="typename";
+$z[10]=Array("field"," <a href=\"[field:imgsrc/]\" title=\"[field:text/]\" rel='gal1' id=\"zoom_box\"><img src=\"[field:imgsrc/]\" width=\"400\" height=\"400\" class=\"big_small\" title=\"[field:text/]\"/></a> ",2943,3178);
+$z[10][4]['name']="imgurls";
+$z[10][4]['alt']="图片输出区";
+$z[11]=Array("field","",3249,3278);
+$z[11][4]['name']="typename";
+$z[12]=Array("field","",3314,3333);
+$z[12][4]['name']="title";
+$z[13]=Array("productimagelist","\r\n                <li><a  href='javascript:void(0);' rel=\"{ gallery: 'gal1', smallimage: '[field:imgsrc/]',largeimage: '[field:imgsrc/]'\r\n                                                }\"><img src='[field:imgsrc/]'   width=\"60\" height=\"60\"  ></a></li>\r\n                ",3575,3892);
+$z[14]=Array("field","",4103,4121);
+$z[14][4]['name']="body";
+$z[15]=Array("arclist","\r\n            <li><a href=\"[field:arcurl/]\" title=\"[field:title/]\"><img src=\"[field:picname/]\" /><span>[field:title/]</span></a></li>\r\n            ",4257,4451);
+$z[15][4]['row']="4";
+$z[15][4]['typeid']="6";
+$z[16]=Array("include","",4641,4678);
+$z[16][4]['filename']="footer.htm";
+
+?>

@@ -1,0 +1,34 @@
+<?php
+$typeArr[1] = '关于我们';
+$typeArr[2] = '公司简介';
+$typeArr[3] = '公司文化';
+$typeArr[4] = '公司环境';
+$typeArr[5] = '荣誉证书';
+$typeArr[6] = '产品中心';
+$typeArr[7] = 'SG干式变压器';
+$typeArr[8] = 'SGG隔离变压器';
+$typeArr[9] = 'AVR智能型稳压器';
+$typeArr[10] = 'FRV无触点稳压器';
+$typeArr[11] = 'SBW大功率补偿式稳压器';
+$typeArr[12] = 'SVC高精度稳压器';
+$typeArr[13] = '调压器';
+$typeArr[14] = 'UPS不间断电源';
+$typeArr[15] = '稳变压器';
+$typeArr[16] = '直流电源';
+$typeArr[17] = 'BK控制变压器';
+$typeArr[18] = '环形变压器';
+$typeArr[19] = '油浸式稳/调压器';
+$typeArr[20] = '变频电源';
+$typeArr[21] = '新闻中心';
+$typeArr[22] = '公司新闻';
+$typeArr[23] = '行业新闻';
+$typeArr[24] = '技术问答';
+$typeArr[25] = '成功案例';
+$typeArr[26] = '成功案例';
+$typeArr[27] = '合作伙伴';
+$typeArr[28] = '合作客户';
+$typeArr[29] = '联系我们';
+$typeArr[30] = '联系方式';
+$typeArr[31] = '在线留言';
+$typeArr[32] = '客户见证';
+?>
